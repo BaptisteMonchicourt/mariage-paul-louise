@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mariage-paul-louise:build:production"
+              "buildTarget": "mariage-paul-louise:build:production"
             },
             "development": {
-              "browserTarget": "mariage-paul-louise:build:development"
+              "buildTarget": "mariage-paul-louise:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mariage-paul-louise:build"
+            "buildTarget": "mariage-paul-louise:build"
           }
         },
         "test": {

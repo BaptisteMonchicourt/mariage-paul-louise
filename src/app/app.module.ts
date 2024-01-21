@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -14,6 +15,7 @@ import { MatMenuModule } from '@angular/material/menu';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    GoogleMapsModule,
     MatButtonModule,
     MatMenuModule,
   ],
