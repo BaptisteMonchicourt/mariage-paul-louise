@@ -1,0 +1,96 @@
+<div class="flex justify-center">
+  <div class="max-w-[600px]">
+    <div class="max-w-[600px] flex justify-between items-center fixed-menu">
+      <button mat-button (click)="scrollTo('accueil')">PAUL & LOUISE</button>
+
+      <div class="flex gap-x-2">
+        <button mat-button (click)="scrollTo('lieu')">Lieu</button>
+        <button mat-button (click)="scrollTo('rsvp')">RSVP</button>
+        <button mat-button [matMenuTriggerFor]="infosPratiquesMenu">
+          Infos pratiques
+        </button>
+      </div>
+    </div>
+
+    <div id="accueil" class="tag"></div>
+
+    <div class="img-container">
+      <img src="../../assets/img/mariés.jpg" />
+
+      <div class="img-text">
+        <div class="mb-6">Paul & Louise</div>
+        <div>se marient le 20 juillet 2024</div>
+      </div>
+    </div>
+
+    <div id="lieu" class="tag"></div>
+
+    <h2>Lieu</h2>
+
+    <div>
+      Le mariage aura lieu le 20 juillet 2024 à 15h en l'église Saint
+      Jean-Baptiste de Servas* 30340.
+    </div>
+
+    <div class="italic">*Servas dans le Gard (30) et pas dans l'Ain (01)</div>
+
+    <div id="rsvp" class="tag"></div>
+
+    <h2>Confirmer votre présence</h2>
+
+    <div>
+      Nous vous invitons à répondre au formulaire suivant pour confirmer votre
+      présence : /INSERER LE LIEN/
+    </div>
+
+    <div id="infos-pratiques" class="tag"></div>
+
+    <h2>Informations pratiques</h2>
+
+    <div>
+      <div>
+        Voici quelques informations pratiques dont vous aurez peut-être besoin.
+      </div>
+
+      <div id="se-garer" class="tag"></div>
+
+      <h3>Se garer</h3>
+
+      <div>
+        Le jour du mariage vous pourrez vous garer à un parking aménager à côté
+        du vin d'honneur & repas, et à 700m de l'église.
+      </div>
+
+      <img src="../../assets/img/parking.png" />
+
+      <div id="se-loger" class="tag"></div>
+
+      <h3>Se loger</h3>
+
+      <div>
+        Pour être logé au plus proche de la cérémonie, nous vous invitons à
+        essayer de trouver un logement autour de Servas :
+        Alès/Rousson/Allègre-les-Fumades/Navacelles/Brouzet-lès-Alès/Mons dans
+        le meilleur des cas. Il est à noter que nous allons essayer de mettre à
+        disposition des taxis pour les personnes qui ne pourront pas/plus
+        conduire le soir des festivités.
+      </div>
+
+      <div id="cadeau" class="tag"></div>
+
+      <h3>Cadeau des mariés</h3>
+
+      <div>
+        Suite à notre mariage nous souhaitons parcourir l'Amérique du Sud
+        pendant au moins 6 mois. Par conséquent, concernant le cadeau des mariés
+        nous aimerions que les invités nous aident un peu à financer ce voyage.
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-menu #infosPratiquesMenu="matMenu">
+  <button mat-menu-item (click)="scrollTo('se-garer')">Se garer</button>
+  <button mat-menu-item (click)="scrollTo('se-loger')">Se loger</button>
+  <button mat-menu-item (click)="scrollTo('cadeau')">Cadeau des mariés</button>
+</mat-menu>
